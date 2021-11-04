@@ -2,8 +2,8 @@ package com.chapter02;
 
 public class Employee_BuilderPattern {
 	
-	////let assume firstName and  lastName are required
-	private final String  firstName ;
+	//let assume firstName and  lastName are required
+    private final String  firstName ;
     private final String lastName ;
     
     //These are optional 
@@ -68,7 +68,7 @@ public class Employee_BuilderPattern {
    
     public static void main(String args[]) {
    	 Employee_BuilderPattern.Builder builder  = new  Employee_BuilderPattern.Builder("bava", "maha");
-   	 Employee_BuilderPattern emp = builder.age(25).phone("077").address("srilanka").build();
+   	 Employee_BuilderPattern emp = builder.address("srilanka").build();
    	 System.out.println(emp);
    	
    }
